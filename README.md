@@ -18,8 +18,10 @@ pip install ....
 ```
 
 
-2. Datasets: 
+2. Datasets:
+   
   Source images dataset : Just download ImageNet Dataset
+  
   Target images dataset : We select 200 classes from ImageNet Dataset. For each classes, we choose 325 pictures.The format is consistent with ImageNet, for example, target_images_dataset/n01440764/1.png.
 
 

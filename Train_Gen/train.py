@@ -146,7 +146,7 @@ def train(modelConfig: Dict):
     transforms.ToTensor(),
     ])
 
-    src = "source benign images folder"
+    src = "source images folder"
     src_target = "target images folder"
 
     train_set = torchvision.datasets.ImageFolder(src, train_transform)

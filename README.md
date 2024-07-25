@@ -30,7 +30,7 @@ pip install ....
 1. step1: train the generator
 
 ```bash
-python a.py
+CUDA_VISIBLE_DEVICES=0 python GAKER.py --batch_size 32 --Source_Model ResNet50 --epoch 20 --state train_model --Generator_save_dir 'save_model/'
 ```
 
 2. step2: craft adversarial examples

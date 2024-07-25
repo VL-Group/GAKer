@@ -29,8 +29,6 @@ parser.add_argument('--unknown', type=str, default='False', help='if unknown or 
 parser.add_argument('--target_select', type=str, default='1', help='target_image_select')
 args = parser.parse_args()
 # CUDA_VISIBLE_DEVICES=2 python GAKER.py --batch_size 25 --Source_Model ResNet50 --epoch 100 --state train_model --Generator_save_dir '200cossimilar_top325_forward/'
-# CUDA_VISIBLE_DEVICES=0 python ESMA.py --Source_Model ResNet50 --test_load_weight ckpt_19_ResNet50_.pt --state craftadv --Generator_save_dir './200cossimilar_top1_forward_doubleloss_eps16/' --ran_best random --set_targets targets_200_cossimilar --val_set imagenet --target_select 1
-
 
 def main():
 

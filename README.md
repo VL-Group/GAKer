@@ -19,18 +19,27 @@ pip install ....
 
 
 2. Datasets: 
-  Download ImageNet Dataset
+  Source images dataset : Just download ImageNet Dataset
+  Target images dataset : We select 200 classes from ImageNet Dataset. For each classes, we choose 325 pictures.The format is consistent with ImageNet, for example, target_images_dataset/n01440764/1.png.
 
 
 ## Generalized Adversarial attacKER (GAKer)
 
-1. step1:
+1. step1: train the generator
 
 ```bash
 python a.py
 ```
 
-2. step2
+2. step2: craft adversarial examples
+
+```bash
+python 2.py 
+```
+The results are stored in `./adv/`.
+
+
+3. step3: evaluate
 
 ```bash
 python 2.py 

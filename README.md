@@ -9,11 +9,11 @@ This repository is the official implementation of our paper [Any Target Can be O
 
 Motivation: Traditional targeted attacks are designed to mislead a model to recognize an image as a specific known target class, which restricts their generalization to unknown classes. To address this issue, we the paradigm of arbitrary-target attack, which can attack any target after one training. 
 
-![The motivation of GAKer](./readme/motivation.jpg)
+![The motivation of GAKer](./Readme/motivation.jpg)
 
 Specifically, we propose **Generalized Adversarial attacKER (GAKer)**, which is able to construct adversarial examples to any target class. The core idea behind GAKer is to craft a latently infected representation during adversarial example generation. 
 
-![The framework of GAKer](./readme/pipeline.jpg)
+![The framework of GAKer](./Readme/pipeline.jpg)
 
 ## Requirements
 
@@ -63,7 +63,7 @@ The results are stored in `./adv/`.
 
 ## Results
 
-![The results of GAKer](./readme/result.jpg)
+![The results of GAKer](./Readme/result.jpg)
 
 ## Citing this work
 

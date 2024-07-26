@@ -1,4 +1,4 @@
-# ECCV2024:Any Target Can be Offense: Adversarial Example Generation via Generalized Latent Infection
+# (ECCV2024) Any Target Can be Offense: Adversarial Example Generation via Generalized Latent Infection
 
 This repository is the official implementation of our paper [Any Target Can be Offense: Adversarial Example Generation via Generalized Latent Infection](https://arxiv.org/abs/2407.12292). 
 

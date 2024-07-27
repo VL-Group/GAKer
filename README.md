@@ -46,20 +46,12 @@ pip install ....
 CUDA_VISIBLE_DEVICES=0 python GAKER.py --batch_size 32 --Source_Model ResNet50 --epoch 20 --state train_model --Generator_save_dir 'save_model/'
 ```
 
-2. step2: craft adversarial examples
+2. step2: craft adversarial examples and evaluate
 
 ```bash
-python 2.py 
+# CUDA_VISIBLE_DEVICES=0 python GAKER.py --Source_Model ResNet50 --test_load_weight ckpt_19_ResNet50_.pt --state craftadv --Generator_save_dir './save_model/' --ran_best random --set_targets targets_200_cossimilar --target_select 1
+
 ```
-The results are stored in `./adv/`.
-
-
-3. step3: evaluate
-
-```bash
-python 2.py 
-```
-The results are stored in `./adv/`.
 
 ## Results
 

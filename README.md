@@ -4,6 +4,13 @@ This repository is the official implementation of our paper [Any Target Can be O
 
 <!-- In this paper, we propose **Generalized Adversarial attacKER (GAKer)**, which is able to construct adversarial examples to any target class. The core idea behind GAKer is to craft a latently infected representation during adversarial example generation. -->
 
+## Demos on GPT-4
+
+![The results of GAKer](./Readme/merge_demo.jpg)
+<!-- ![The results of GAKer](./Readme/gptimg1.PNG)
+![The results of GAKer](./Readme/gpttalk1.PNG) -->
+More demos on GPT-4 can be found in [our paper](https://arxiv.org/abs/2407.12292). 
+
 
 ## Overview
 
@@ -49,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 python GAKER.py --batch_size 32 --Source_Model ResNet50 -
 2. step2: craft adversarial examples and evaluate
 
 ```bash
-# CUDA_VISIBLE_DEVICES=0 python GAKER.py --Source_Model ResNet50 --test_load_weight ckpt_19_ResNet50_.pt --state craftadv --Generator_save_dir './save_model/' --ran_best random --set_targets targets_200_cossimilar --target_select 1
+CUDA_VISIBLE_DEVICES=0 python GAKER.py --Source_Model ResNet50 --test_load_weight ckpt_19_ResNet50_.pt --state craftadv --Generator_save_dir './save_model/' --ran_best random --set_targets targets_200_cossimilar --target_select 1
 
 ```
 
